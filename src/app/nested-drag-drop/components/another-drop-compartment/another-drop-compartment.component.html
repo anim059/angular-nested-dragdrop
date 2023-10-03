@@ -1,0 +1,16 @@
+<div class="card">
+    <div class="card-header">
+        <div class="d-flex justify-content-between">
+            <h2>Add Table To Compartment</h2>
+        </div>
+    </div>
+
+    <div class="card-body">
+        <div class="card-body table-drop-box" cdkDropList id="another_drop_zone" (cdkDropListDropped)="Drop($event)"
+            (cdkDropListEntered)="dropzoneEntered($event)" (cdkDropListExited)="dropzoneExited($event)">
+            <small class="text-danger mb-2 d-block text-center">
+                <strong><h4><i>[Drag & Drop a Table into this box]</i></h4></strong>
+            </small>
+        </div>
+    </div>
+</div>
